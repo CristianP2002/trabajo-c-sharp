@@ -10,6 +10,7 @@ namespace trabajo_c_sharp
     {
         static void Main(string[] args)
         {
+
             {
                 Console.WriteLine("ejercicio 1");
                 /* 1. Hacer un algoritmo que declare una variable para guardar el número de horas de estudio,
@@ -113,7 +114,7 @@ namespace trabajo_c_sharp
                 Console.WriteLine("cuanto dinero tiene (pesos)");
                 dinero = double.Parse(Console.ReadLine());
 
-                Console.WriteLine("su nombre es {0}, su comida favorita es {1} y tiene {2} pesos ");
+                Console.WriteLine("su nombre es {0}, su comida favorita es {1} y tiene {2} pesos ", nombre, comida_fav, dinero);
             }
 
             {
@@ -250,7 +251,7 @@ namespace trabajo_c_sharp
 
                 total = num1 - num2;
 
-                Console.WriteLine("La diferencia de los dos numeros es de {0}", total);
+                Console.WriteLine("La resta entre los dos numeros es de {0}", total);
             }
 
 
@@ -344,6 +345,48 @@ namespace trabajo_c_sharp
                 area = ladoY * ladoX;
 
                 Console.WriteLine("El area de su rectangulo es de {0}", area);
+            }
+
+            {
+                Console.WriteLine("ejercicio 17");
+                /* 17. Pedir dos números y decir si son iguales o no. */
+
+
+                double num1, num2;
+
+                Console.WriteLine("digite primer numero");
+                num1 = double.Parse(Console.ReadLine());
+
+                Console.WriteLine("digite numero 2");
+                num2 = double.Parse(Console.ReadLine());
+
+                if(num1 == num2)
+                {
+                    Console.WriteLine("los numeros son iguales");
+                }else{
+                    Console.WriteLine("los numeros son diferentes");
+                }
+
+
+                {
+
+                    Console.WriteLine("ejercicio 18");
+                    /* 18. Pedir un número e indicar si es positivo o negativo */
+
+
+                    double num1;
+
+                    Console.WriteLine("digite su numero");
+                    num1 = double.Parse(Console.ReadLine());
+
+                    if(num1 >= 0)
+                    {
+                        Console.WriteLine("el munero es positivo");
+                    }else{
+                        Console.WriteLine("el numero es negativo");
+                    }
+                }
+
             }
 
             Console.ReadKey();
