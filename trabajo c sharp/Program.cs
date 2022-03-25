@@ -385,6 +385,46 @@ namespace trabajo_c_sharp
                     }else{
                         Console.WriteLine("el numero es negativo");
                     }
+
+                    {
+                            Console.WriteLine("ejercicio 19");
+                        /* 19. Pedir dos números y decir si uno es múltiplo del otro */
+
+
+                        double num1, num2;
+
+                        Console.WriteLine("digite su numero");
+                        num1 = double.Parse(Console.ReadLine());
+
+                        Console.WriteLine("escriba segundo numero");
+                        num2 = double.Parse(Console.ReadLine());
+    
+                        if(num1 % num2 == 0){
+                            Console.WriteLine("los numeros son multiplos");
+                        }else{
+                            Console.WriteLine("los numeros no son multiplos");
+                        }
+
+                        {
+                            Console.WriteLine("ejercicio 20");
+                            /* 20. Pedir dos números y decir cuál es el mayor. */
+
+
+                            double num1, num2;
+
+                            Console.WriteLine("digite su numero");
+                            num1 = double.Parse(Console.ReadLine());
+
+                            Console.WriteLine("escriba segundo numero");
+                            num2 = double.Parse(Console.ReadLine());
+    
+                            if(num1 > num2){
+                                Console.WriteLine("el  primer numero es mayor");
+                            }else{
+                                Console.WriteLine("el segundo numero es mayor");
+                            }
+                        }
+                    }
                 }
 
             }
