@@ -117,6 +117,7 @@ namespace trabajo_c_sharp
                 Console.WriteLine("su nombre es {0}, su comida favorita es {1} y tiene {2} pesos ", nombre, comida_fav, dinero);
             }
 
+
             {
                 Console.WriteLine("ejercicio 6");
                 /* 6. Algoritmo que lea el nombre de un articulo,la cantidad a comprar, el valor unitario 
@@ -347,6 +348,7 @@ namespace trabajo_c_sharp
                 Console.WriteLine("El area de su rectangulo es de {0}", area);
             }
 
+
             {
                 Console.WriteLine("ejercicio 17");
                 /* 17. Pedir dos números y decir si son iguales o no. */
@@ -366,67 +368,155 @@ namespace trabajo_c_sharp
                 }else{
                     Console.WriteLine("los numeros son diferentes");
                 }
+            }
+
+            
+            {
+                Console.WriteLine("ejercicio 18");
+                /* 18. Pedir un número e indicar si es positivo o negativo */
 
 
+                double num1;
+
+                Console.WriteLine("digite su numero");
+                num1 = double.Parse(Console.ReadLine());
+
+                if(num1 >= 0)
                 {
-
-                    Console.WriteLine("ejercicio 18");
-                    /* 18. Pedir un número e indicar si es positivo o negativo */
-
-
-                    double num1;
-
-                    Console.WriteLine("digite su numero");
-                    num1 = double.Parse(Console.ReadLine());
-
-                    if(num1 >= 0)
-                    {
-                        Console.WriteLine("el munero es positivo");
-                    }else{
-                        Console.WriteLine("el numero es negativo");
-                    }
-
-                    {
-                            Console.WriteLine("ejercicio 19");
-                        /* 19. Pedir dos números y decir si uno es múltiplo del otro */
-
-
-                        double num1, num2;
-
-                        Console.WriteLine("digite su numero");
-                        num1 = double.Parse(Console.ReadLine());
-
-                        Console.WriteLine("escriba segundo numero");
-                        num2 = double.Parse(Console.ReadLine());
-    
-                        if(num1 % num2 == 0){
-                            Console.WriteLine("los numeros son multiplos");
-                        }else{
-                            Console.WriteLine("los numeros no son multiplos");
-                        }
-
-                        {
-                            Console.WriteLine("ejercicio 20");
-                            /* 20. Pedir dos números y decir cuál es el mayor. */
-
-
-                            double num1, num2;
-
-                            Console.WriteLine("digite su numero");
-                            num1 = double.Parse(Console.ReadLine());
-
-                            Console.WriteLine("escriba segundo numero");
-                            num2 = double.Parse(Console.ReadLine());
-    
-                            if(num1 > num2){
-                                Console.WriteLine("el  primer numero es mayor");
-                            }else{
-                                Console.WriteLine("el segundo numero es mayor");
-                            }
-                        }
-                    }
+                    Console.WriteLine("el munero es positivo");
+                }else{
+                    Console.WriteLine("el numero es negativo");
                 }
 
+            }
+
+
+            {
+                Console.WriteLine("ejercicio 19");
+                /* 19. Pedir dos números y decir si uno es múltiplo del otro */
+
+
+                double num1, num2;
+
+                Console.WriteLine("digite su numero");
+                num1 = double.Parse(Console.ReadLine());
+
+                Console.WriteLine("escriba segundo numero");
+                num2 = double.Parse(Console.ReadLine());
+    
+                if(num1 % num2 == 0){
+                    Console.WriteLine("los numeros son multiplos");
+                }else{
+                    Console.WriteLine("los numeros no son multiplos");
+                }
+            }
+
+
+            { 
+                Console.WriteLine("ejercicio 20");
+                /* 20. Pedir dos números y decir cuál es el mayor. */
+
+
+                double num1, num2;
+
+                Console.WriteLine("digite su numero");
+                num1 = double.Parse(Console.ReadLine());
+
+                Console.WriteLine("escriba segundo numero");
+                num2 = double.Parse(Console.ReadLine());
+    
+                if(num1 > num2){
+                    Console.WriteLine("el  primer numero es mayor");
+                }else{
+                    Console.WriteLine("el segundo numero es mayor");
+                }
+            }
+            
+            
+            {
+                Console.WriteLine("ejercicio 21");
+                /* 21. Pedir dos números y decir cuál es el mayor o si son iguales. */
+
+
+                double num1, num2;
+
+                Console.WriteLine("digite su numero");
+                num1 = double.Parse(Console.ReadLine());
+
+                Console.WriteLine("escriba segundo numero");
+                num2 = double.Parse(Console.ReadLine());
+
+                if(num1 == num2){
+                    Console.WriteLine("los numeros son iguales");
+                }
+                if(num1 > num2){
+                    Console.WriteLine("el  primer numero es mayor");
+                }
+                if(num1 < num2){
+                    Console.WriteLine("el segundo numero es mayor");
+                }
+            }
+
+            {
+                Console.WriteLine("ejercicio 22");
+                /* 22. Pedir dos números y mostrarlos ordenados de mayor a menor. */
+
+
+                double num1, num2;
+
+                Console.WriteLine("digite su numero");
+                num1 = double.Parse(Console.ReadLine());
+
+                Console.WriteLine("escriba segundo numero");
+                num2 = double.Parse(Console.ReadLine());
+
+                if(num1 > num2) {
+                    Console.WriteLine("el orden de mayor a menor es {0}, {1}",num1, num2);
+                }else{
+                    Console.WriteLine("el orden mayor a menor es {0}, {1} ",num2, num1);
+                }
+
+            }
+
+            {
+                Console.WriteLine("ejercicio 23");
+                /* 23. Pedir tres números y mostrarlos ordenados de mayor a menor. */
+
+
+                double num1, num2, num3;
+
+                Console.WriteLine("digite su primer numero");
+                num1 = double.Parse(Console.ReadLine());
+
+                Console.WriteLine("digite su segundo numero");
+                num2 = double.Parse(Console.ReadLine());
+
+                Console.WriteLine("digite su tercer numero");
+                num3 = double.Parse(Console.ReadLine());
+
+                if(num1 < num2 & num2 < num3 & num3 > num1) {
+                    Console.WriteLine("el orden de mayor a menor es {0}, {1}, {2}",num3, num2, num1);
+                }
+
+                if(num1 < num2 & num2 > num3 & num3 > num1) {
+                    Console.WriteLine("el orden de mayor a menor es {0}, {1}, {2}",num2, num3, num1);
+                }
+
+                if(num1 > num2 & num2 < num3 & num3 > num1) {
+                    Console.WriteLine("el orden de mayor a menor es {0}, {1}, {2}",num3, num1, num2);
+                }
+
+                if(num1 < num2 & num2 > num3 & num3 < num1) {
+                    Console.WriteLine("el orden de mayor a menor es {0}, {1}, {2}",num2, num1, num3);
+                }
+
+                if(num1 > num2 & num2 < num3 & num3 < num1) {
+                    Console.WriteLine("el orden de mayor a menor es {0}, {1}, {2}",num1, num3, num2);
+                }
+
+                if(num1 > num2 & num2 > num3 & num3 < num1) {
+                    Console.WriteLine("el orden de mayor a menor es {0}, {1}, {2}",num1, num2, num3);
+                }
             }
 
             Console.ReadKey();
