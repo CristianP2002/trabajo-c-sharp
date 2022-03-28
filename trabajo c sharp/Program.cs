@@ -519,6 +519,113 @@ namespace trabajo_c_sharp
                 }
             }
 
+            {
+                Console.WriteLine("ejercicio 24");
+                /* 24. Pedir un número entre 0 y 9.999 y decir cuántas cifras tiene. */
+
+
+                double num1;
+
+                Console.WriteLine("digite un numero entre 0 y 9.999");
+                num1 = double.Parse(Console.ReadLine());
+
+                if(num1 > 0 & num1 < 9) {
+                    Console.WriteLine("el numero tiene 1 cifra");
+                }
+                if(num1 > 10 & num1 < 99) {
+                    Console.WriteLine("el numero tiene 2 cifra");
+                }
+                if(num1 > 100 & num1 < 999) {
+                    Console.WriteLine("el numero tiene 3 cifra");
+                }
+                if(num1 > 1000 & num1 < 9999) {
+                    Console.WriteLine("el numero tiene 4 cifra");
+                }
+            }
+
+            {
+                Console.WriteLine("ejercicio 25");
+                /* 25. Pedir una nota de 0 a 5 y mostrarla de la forma: Insuficiente (0 – 2,9), Suficiente (3 – 4,5) y Bien (4,6 – 5) */
+
+
+                double num1;
+
+                Console.WriteLine("digite su nota");
+                num1 = double.Parse(Console.ReadLine());
+
+                if(num1 > 0 & num1 < 2.9) {
+                    Console.WriteLine("insuficiente");
+                }
+                if(num1 > 3 & num1 < 4.5) {
+                    Console.WriteLine("suficiente");
+                }
+                if(num1 > 4.6 & num1 < 5) {
+                    Console.WriteLine("bien");
+                }
+            }
+
+            {
+                Console.WriteLine("ejercicio 26");
+                /* 26. Pedir una nota numérica entera entre 0 y 10, y mostrar dicha nota de la forma: cero, uno, dos, tres... */
+
+
+                int num1;
+
+                Console.WriteLine("digite su nota entre 1 y 10");
+                num1 = int.Parse(Console.ReadLine());
+
+                if(num1 == 0) {
+                    Console.WriteLine("cero");
+                }
+                if(num1 == 1) {
+                    Console.WriteLine("uno");
+                }
+                if(num1 == 2) {
+                    Console.WriteLine("dos");
+                }
+                if(num1 == 3) {
+                    Console.WriteLine("tres");
+                }
+                if(num1 == 4) {
+                    Console.WriteLine("cuatro");
+                }
+                if(num1 == 5) {
+                    Console.WriteLine("cinco");
+                }
+                if(num1 == 6) {
+                    Console.WriteLine("seis");
+                }
+                if(num1 == 7) {
+                    Console.WriteLine("siete");
+                }
+                if(num1 == 8) {
+                    Console.WriteLine("ocho");
+                }
+                if(num1 == 9) {
+                    Console.WriteLine("nueve");
+                }
+                if(num1 == 10) {
+                    Console.WriteLine("diez");
+                }
+            }
+
+            {
+                Console.WriteLine("ejercicio 27");
+                /* 27. Pedir un número y decir si es par o impar. */
+
+
+                double num1;
+
+                Console.WriteLine("digite su numero");
+                num1 = double.Parse(Console.ReadLine());
+
+                if((num1 % 2) == 0){
+                    Console.WriteLine("es un numero par");
+                }else{
+                    Console.WriteLine("no es un numero par");
+                }
+            }
+
 
 
             Console.ReadKey();
