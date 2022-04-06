@@ -290,7 +290,7 @@ namespace trabajo_c_sharp
                 Console.WriteLine("Digite el valor del radio de un circulo");
                 radio = double.Parse(Console.ReadLine());
 
-                area = Math.PI * radio * 2;
+                area = Math.PI * Math.Pow(radio, 2);
 
                 Console.WriteLine("El area del circulo es {0}", area);
             }
@@ -553,14 +553,15 @@ namespace trabajo_c_sharp
                 Console.WriteLine("digite su nota");
                 num1 = double.Parse(Console.ReadLine());
 
-                if(num1 > 0 & num1 < 2.9) {
-                    Console.WriteLine("insuficiente");
+                if(num1 >= 0 && num1 < 3) {
+                    Console.WriteLine("la nota es insuficiente");
+                }else if(num1 >= 3 && num1 < 4.6) {
+                    Console.WriteLine("la nota es suficiente");
+                }else if(num1 >= 4.6 && num1 <= 5) {
+                    Console.WriteLine("la nota es bien");
                 }
-                if(num1 > 3 & num1 < 4.5) {
-                    Console.WriteLine("suficiente");
-                }
-                if(num1 > 4.6 & num1 < 5) {
-                    Console.WriteLine("bien");
+                else {
+                    Console.WriteLine("Rando incorecto");
                 }
             }
 
