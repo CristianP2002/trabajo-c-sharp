@@ -625,9 +625,6 @@ namespace trabajo_c_sharp
                     Console.WriteLine("no es un numero par");
                 }
             }
-
-
-
             Console.ReadKey();
         }
     }
